@@ -1,11 +1,20 @@
 .logo {
-  content: url("");
+  content: url("../images/jet-beauty-logo.svg");
   display: inline-block;
-  width: 0;
-  height: 0;
+
   line-height: 1;
+
+  &.logo_header {
+    width: 88px;
+    height: 28px;
+  }
 }
 
 @include desktop {
-
+  .logo {
+    &.logo_header {
+      width: 110px;
+      height: 36px;
+    }
+  }
 }

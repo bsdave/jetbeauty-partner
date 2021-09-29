@@ -1,14 +1,9 @@
 $(function () {
   $('html').addClass('js');
 
-  initializeRanges();
-
-  $('.menu-button').click(function () {
-    $('.header').addClass('opened');
-  });
-
-  $('.header-background').click(function () {
-    $('.header').removeClass('opened');
+  $('.burger').click(function(){
+    $(this).toggleClass('opened');
+    $('.header__menu').toggleClass('opened');
   });
 
   $('.close-modal').click(function () {
