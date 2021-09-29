@@ -10,6 +10,23 @@
   }
 }
 
+.title {
+  font-size: 24px;
+  margin-top: 0;
+}
+
+.paragraph {
+  font-size: 13px;
+  color: #000;
+
+  &.paragraph_big {
+    font-size: 19px;
+    line-height: 23px;
+  }
+}
+
+
+
 @include desktop {
   .logo {
     &.logo_header {

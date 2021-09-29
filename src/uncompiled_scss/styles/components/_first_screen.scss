@@ -1,0 +1,51 @@
+.first-screen-box {
+  background-image: 
+    url("../images/first-screen-mobile-background.svg"),
+    linear-gradient(106.02deg, rgba(255, 215, 247, 0.204) 1.71%, rgba(160, 75, 182, 0.087) 103.43%);
+  background-position: 70% 14%, center;
+  background-repeat: no-repeat;
+  background-size: 80%, 100%;
+
+  .first-screen {
+    height: 100vh;
+
+    .first-screen__floating {
+      height: 100vh;
+      padding: 25px 0;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+
+
+      .first-screen__doctor {
+        height: 100%;
+        margin-top: 88px;
+        background-image: url("../images/doctor.png");
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+
+      .first-screen__message {
+        padding: 30px;
+        background: rgba(255, 255, 255, 0.6);
+        box-shadow: 0px 4px 37px rgba(0, 0, 0, 0.08);
+        backdrop-filter: blur(17px);
+        border-radius: 8px;
+  
+        .title {
+          color: #D879C5;
+        }
+  
+        .paragraph {
+  
+          &.paragraph_big {
+            color: #043071;;
+          }
+        }
+      }
+    }
+  }
+}
+
