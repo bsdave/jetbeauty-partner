@@ -1,6 +1,6 @@
 .first-screen-box {
   background-image: 
-    url("../images/first-screen-mobile-background.svg"),
+    url("../images/first-screen-background-mobile.svg"),
     linear-gradient(106.02deg, rgba(255, 215, 247, 0.204) 1.71%, rgba(160, 75, 182, 0.087) 103.43%);
   background-position: 70% 14%, center;
   background-repeat: no-repeat;
@@ -42,6 +42,59 @@
   
           &.paragraph_big {
             color: #043071;;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include desktop {
+  .first-screen-box {
+    background-position: 50% 40%, center;
+    background-size: 75%, 100%;
+    background-image: 
+    url("../images/first-screen-background-desktop.svg"),
+    linear-gradient(106.02deg, rgba(255, 215, 247, 0.204) 1.71%, rgba(160, 75, 182, 0.087) 103.43%);
+
+    .first-screen {
+      .first-screen__floating {
+        padding-top: 169px;  
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        position: relative;
+
+        .first-screen__doctor {
+          position: absolute;
+          z-index: 0;
+          left: 50%;
+          bottom: 0;
+          right: -100px;
+          padding-top: 10px;
+          
+          margin-top: 0;
+          background-image: url("../images/doctor-desktop.png");
+          background-position: center bottom;
+          background-size: 70%;
+        }
+
+        .first-screen__message {
+          background: transparent;
+          box-shadow: none;
+          backdrop-filter: none;
+          margin-right: 30%;
+
+          .title {
+            font-size: 56px;
+            line-height: 56px;
+          }
+
+          .first-screen__message-box {
+            margin-right: 35%;
+
+            .message-box_limited {
+              width: 455px;
+            }
           }
         }
       }
