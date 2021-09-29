@@ -1,0 +1,11 @@
+.logo {
+  content: url("");
+  display: inline-block;
+  width: 0;
+  height: 0;
+  line-height: 1;
+}
+
+@include desktop {
+
+}
