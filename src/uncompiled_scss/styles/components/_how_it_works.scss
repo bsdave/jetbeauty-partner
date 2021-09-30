@@ -1,10 +1,9 @@
 .how-it-works-box {
   margin-top: 120px;
-  
   .how-it-works {
     padding: 15px;
-
     .interactive-flow-box {
+      margin-top: 30px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -49,32 +48,29 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
+      align-items: center;
+    }
+    .cards-flow-box {
+      display: none;
     }
   }
-
+  .cards-flow-box,
   .cards-box {
     position: relative;
     .cards {
-
       display: flex;
       overflow-x: scroll;
       padding: 40px;
-
       .card {
         background: rgba(255, 255, 255, 0.6);
         box-shadow: 0px 3.18375px 29.4497px rgba(0, 0, 0, 0.08);
         backdrop-filter: blur(13.5309px);
         border-radius: 6px;
         padding: 25px;
-        
         text-align: center;
         margin-right: 23px;
         flex-shrink: 0;
         flex-basis: 80%;
-
-        &:last-child {
-          margin-right: 0;
-        }
 
         img {
           display: block;
@@ -87,3 +83,32 @@
   }
 }
 
+@include tablet {
+  .how-it-works-box {
+    .how-it-works {
+      .timing-box {
+        .paragraph {
+          margin-right: 20px;
+        }
+      }
+      .cards-flow-box {
+        display: block;
+        .cards {
+          margin: 0 -30px;
+          padding: 40px;
+        }
+      }
+    }
+    .cards-flow-box,
+    .cards-box {
+      .cards {
+        overflow: hide;
+        padding: 40px;
+        .card {
+          flex-basis: 33%;
+          flex-shrink: 1;
+        }
+      }
+    }
+  }
+}
