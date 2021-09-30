@@ -20,12 +20,13 @@
 
       img {
         margin-bottom: 15px;
+        width: 100%;
       }
     }
   }
 }
 
-@include desktop {
+@include tablet {
   .creators-box {
     background-image: url("../images/jet-beauty-background-logo.svg");
     background-repeat: no-repeat;

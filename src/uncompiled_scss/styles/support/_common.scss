@@ -79,6 +79,19 @@
   text-align: center;
 }
 
+@include tablet {
+  .jet-beauty-divider {
+    content: url("../images/jet-beauty-divider-desktop.svg");
+    object-fit: fill;
+    margin-top: -450px;
+    margin-bottom: -350px;
+    height: 1200px;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 39%;
+  }
+}
+
 @include desktop {
   .logo {
     &.logo_header {
@@ -105,6 +118,7 @@
       line-height: 39px;
     }
   }
+
   .jet-beauty-divider {
     content: url("../images/jet-beauty-divider-desktop.svg");
     object-fit: fill;
