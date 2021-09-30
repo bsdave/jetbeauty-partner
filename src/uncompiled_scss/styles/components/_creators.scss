@@ -1,0 +1,38 @@
+.creators-box {
+  margin-bottom: 100px;
+  .creators__logo {
+    display: none;
+  }
+  .products {
+    padding: 30px 16px;
+    .product {
+      padding: 20px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+  }
+}
+
+@include desktop {
+  .creators-box {
+    background-image: url("../images/jet-beauty-background-logo.svg");
+    background-repeat: no-repeat;
+    background-position: 80% 10%;
+    .creators__logo {
+      display: block;
+      width: 278px;
+      height: auto;
+      display: block;
+      margin-bottom: 35px;
+    }
+
+    .title {
+      font-size: 32px;
+      line-height: 24px;
+    }
+  }
+}

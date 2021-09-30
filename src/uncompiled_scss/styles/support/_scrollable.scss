@@ -1,0 +1,30 @@
+.scrollable {
+  display: flex;
+  overflow-x: scroll;
+  .scrollable-item {
+    flex-shrink: 0;
+    flex-basis: 80%;
+    margin-right: 20px;
+
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 4px 37px rgba(0, 0, 0, 0.08);
+    backdrop-filter: blur(17px);
+    border-radius: 8px;
+  }
+}
+
+@include desktop {
+  .scrollable {
+    justify-content: space-between;
+
+    .scrollable-item {
+      flex-shrink: 1;
+      flex-basis: 80%;
+  
+      background: rgba(255, 255, 255, 0.8);
+      box-shadow: 0px 4px 37px rgba(0, 0, 0, 0.08);
+      backdrop-filter: blur(17px);
+      border-radius: 8px;
+    }
+  }
+}
