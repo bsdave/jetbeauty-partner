@@ -30,8 +30,15 @@
   font-size: 13px;
   line-height: 19px;
   color: #000;
+  font-weight: 300;
+
+  &.paragraph-dark-light {
+    color: #030303;
+  }
+
   &.paragraph_dark-blue {
     color: #043071;
+    font-weight: 600;
   }
   &.paragraph_big {
     font-size: 19px;

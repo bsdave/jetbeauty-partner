@@ -12,6 +12,7 @@
     display: flex;
     width: 100%;
     overflow-x: scroll;
+    @include hide-scrollbar;
     padding: 25px 16px;
     .point {
       padding: 20px;
@@ -33,6 +34,10 @@
         font-size: 13px;
         line-height: 20px;
         color: #000000;
+      }
+
+      .point__text {
+        opacity: 0.7;
       }
     }
   }

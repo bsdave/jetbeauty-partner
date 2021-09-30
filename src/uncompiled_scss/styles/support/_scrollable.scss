@@ -1,6 +1,7 @@
 .scrollable {
   display: flex;
   overflow-x: scroll;
+  @include hide-scrollbar;
   .scrollable-item {
     flex-shrink: 0;
     flex-basis: 80%;
