@@ -12,6 +12,11 @@
   font-size: 24px;
   margin: 0;
   color: #043071;
+
+  &.title_normal {
+    font-weight: normal;
+  }
+
   &.title_small {
     font-size: 15px;
     line-height: 19px;
@@ -45,6 +50,14 @@
   object-position: 50% 39%;
 }
 
+.centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 @include desktop {
   .logo {
     &.logo_header {
@@ -75,8 +88,8 @@
     content: url("../images/jet-beauty-divider-desktop.svg");
     object-fit: fill;
     margin-top: -450px;
-    margin-bottom: -450px;
-    height: 1350px;
+    margin-bottom: -350px;
+    height: 1200px;
     width: 100%;
     object-fit: cover;
     object-position: 50% 39%;

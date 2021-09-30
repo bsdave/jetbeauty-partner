@@ -1,0 +1,97 @@
+.why-choose-us-box {
+  margin-top: 80px;
+  margin-bottom: 50px;
+  width: 100%;
+  .why-choose-us-text {
+    .title {
+      font-weight: normal;
+    }
+    padding: 25px;
+  }
+  .why-choose-us {
+    display: flex;
+    width: 100%;
+    overflow-x: scroll;
+    padding: 25px 16px;
+    .point {
+      padding: 20px;
+      text-align: center;
+      flex-basis: 80%;
+      margin-right: 20px;
+      flex-shrink: 0;
+      background: rgba(255, 255, 255, 0.6);
+      box-shadow: 0px 3.18375px 29.4497px rgba(0, 0, 0, 0.08);
+      backdrop-filter: blur(13.5309px);
+      border-radius: 6.3675px;
+      .title {
+        font-size: 13px;
+        line-height: 20px;
+        margin-top: 5px;
+        color: #000000;
+      }
+      .paragraph {
+        font-size: 13px;
+        line-height: 20px;
+        color: #000000;
+      }
+    }
+  }
+  .offer {
+    margin-top: 30px;
+    margin-bottom: 250px;
+    .title {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+@include desktop {
+  .why-choose-us-box {
+    .why-choose-us-text {
+      padding: 50px;
+    }
+    
+    .why-choose-us {
+      width: calc(100% - 100px);
+      margin: auto;
+      background: rgba(255, 255, 255, 0.6);
+      box-shadow: 0px 4px 37px rgba(0, 0, 0, 0.08);
+      backdrop-filter: blur(17px);
+      border-radius: 8px;
+
+      flex-direction: column;
+
+      padding: 30px 50px;
+
+      .point {
+        background: none;
+        box-shadow: none;
+        backdrop-filter: none;
+        border-radius: none;
+
+        display: flex;
+        align-items: center;
+
+        img {
+          width: 45px;
+          height: auto;
+
+          object-fit: contain;
+          // object-position: 50% 39%;
+        }
+
+        .point__text {
+          text-align: left;
+          margin-left: 30px;
+        }
+      }
+    }
+
+    .offer {
+      .title {
+        font-size: 24px;
+        line-height: 40px;
+      }
+    }
+  }
+}
