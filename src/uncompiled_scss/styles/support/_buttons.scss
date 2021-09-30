@@ -27,6 +27,11 @@
   &.button_full-width {
     width: 100%;
   }
+
+  &.button_long {
+    width: 80%;
+    max-width: 455px;
+  }
 }
 
 .burger {

@@ -1,18 +1,26 @@
 .creators-box {
-  margin-bottom: 100px;
+  .title {
+    margin-left: 30px;
+  }
+
+  margin-bottom: 50px;
   .creators__logo {
     display: none;
   }
   .products {
     padding: 30px 16px;
     .product {
-      padding: 20px;
+      padding: 30px;
       text-align: center;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       height: 100%;
+
+      img {
+        margin-bottom: 15px;
+      }
     }
   }
 }
