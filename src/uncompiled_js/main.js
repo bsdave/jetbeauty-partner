@@ -13,25 +13,4 @@ $(function () {
   $('.open-modal').click(function () {
     $(`#${$(this).data().modalId}`).toggleClass('opened');
   });
-
-  new Swiper('.swiper', {
-    spaceBetween: 15,
-    slidesPerView: 3,
-    loop: true,
-    breakpoints: {
-      768: {
-        slidesPerView: 5
-      },
-      992: {
-        slidesPerView: 7
-      },
-    },
-    pagination: {
-      el: '.swiper-pagination',
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  });
 });

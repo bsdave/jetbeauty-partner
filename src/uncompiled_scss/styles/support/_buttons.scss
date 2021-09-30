@@ -30,19 +30,12 @@
 }
 
 .burger {
-  display: block;
-  width: 20px;
-  height: 16px;
-
-
   outline: none;
   border: none;
 
-  background-image: url("../images/burger.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-color: transparent;
-  cursor: pointer;
 }
 
 @include desktop {

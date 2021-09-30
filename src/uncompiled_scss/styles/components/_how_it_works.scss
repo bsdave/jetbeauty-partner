@@ -1,0 +1,89 @@
+.how-it-works-box {
+  margin-top: 120px;
+  
+  .how-it-works {
+    padding: 15px;
+
+    .interactive-flow-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .interactive-flow {
+        height: 200px;
+        width: 200px;
+        margin-bottom: 50px;
+        background-image: url("../images/flow.svg");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+        .step {
+          height: 80px;
+          width: 80px;
+          background-color: rgba(255, 255, 255, 0.6);
+          box-shadow: 0px 3.18375px 29.4497px rgba(0, 0, 0, 0.08);
+          backdrop-filter: blur(13.5309px);
+          border-radius: 50%;
+          background-repeat: no-repeat;
+          background-position: center;
+          position: absolute;
+          &.hospital {
+            background-image: url("../images/hospital.svg");
+            top: 30px;
+            left: -22px;
+          }
+          &.doctor {
+            background-image: url("../images/doctor.svg");
+            top: 26px;
+            right: -15px;
+          }
+          &.patient {
+            background-image: url("../images/patient.svg");
+            bottom: -12px;
+            left: 61px;
+          }
+        }
+      }
+    }
+    .timing-box {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  .cards-box {
+    position: relative;
+    .cards {
+
+      display: flex;
+      overflow-x: scroll;
+      padding: 40px;
+
+      .card {
+        background: rgba(255, 255, 255, 0.6);
+        box-shadow: 0px 3.18375px 29.4497px rgba(0, 0, 0, 0.08);
+        backdrop-filter: blur(13.5309px);
+        border-radius: 6px;
+        padding: 25px;
+        
+        text-align: center;
+        margin-right: 23px;
+        flex-shrink: 0;
+        flex-basis: 80%;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        img {
+          display: block;
+          height: 89px;
+          width: 100%;
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+}
+
