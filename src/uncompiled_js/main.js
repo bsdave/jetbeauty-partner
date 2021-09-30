@@ -6,6 +6,11 @@ $(function () {
     $('.header__menu').toggleClass('opened');
   });
 
+  $('.header__menu a').click(function () {
+    $('.burger').toggleClass('opened');
+    $('.header__menu').toggleClass('opened');
+  });
+
   $('.close-modal').click(function () {
     $(this).parents('.modal-box').toggleClass('opened');
   });

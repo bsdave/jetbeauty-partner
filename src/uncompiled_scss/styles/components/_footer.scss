@@ -87,6 +87,15 @@
       padding: 50px;
       .social-links {
         height: 100%;
+
+        .social-link {
+          transition: 0.2s;
+
+          &:hover {
+            box-shadow: 0px 4px 37px rgba(0, 0, 0, 0.08);
+            opacity: 0.9;
+          }
+        }
       }
     }
   }

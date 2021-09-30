@@ -1,4 +1,5 @@
 .creators-box {
+  padding-top: 200px;
   .title {
     margin-left: 30px;
   }
@@ -10,7 +11,7 @@
   .products {
     padding: 30px 16px;
     .product {
-      padding: 30px;
+      padding: 15px 30px;
       text-align: center;
       display: flex;
       flex-direction: column;
@@ -20,7 +21,7 @@
 
       img {
         margin-bottom: 15px;
-        width: 100%;
+        width: 70%;
       }
     }
   }

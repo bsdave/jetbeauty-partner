@@ -73,7 +73,10 @@
       }
 
       .header__menu {
-        display: block;
+        &.opened {
+          display: flex;
+        }
+
         position: initial;
 
         padding: 0;
@@ -89,6 +92,14 @@
         li {
           border-bottom: none;
           margin: 0 15px;
+
+          a {
+            transition: 0.2s;
+
+            &:hover {
+              opacity: 0.8;
+            }
+          }
         }
       }
 

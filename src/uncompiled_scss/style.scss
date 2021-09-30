@@ -23,6 +23,10 @@ body {
   font-size: 12px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @include tablet {
   body {
   }
