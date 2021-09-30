@@ -43,6 +43,16 @@
   background-color: transparent;
 }
 
+.button-close {
+  display: block;
+  height: 18px;
+  width: 18px;
+  background: url("../images/close.svg");
+  background-repeat: no-repeat;
+  outline: none;
+  border: none;
+}
+
 @include desktop {
   .button {
     border-radius: 10px;

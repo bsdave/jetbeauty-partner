@@ -9,6 +9,7 @@
 @import "styles/support/burger";
 @import "styles/support/grid";
 @import "styles/support/scrollable";
+@import "styles/support/form";
 
 @import "styles/components/header";
 @import "styles/components/first_screen";
@@ -17,6 +18,7 @@
 @import "styles/components/creators";
 @import "styles/components/characteristics";
 @import "styles/components/footer";
+@import "styles/components/modal";
 
 body {
   font-family: "Roboto", sans-serif;
