@@ -1,4 +1,5 @@
 .first-screen-box {
+  overflow: hidden;
   background-image: 
     url("../images/first-screen-background-mobile.svg"),
     linear-gradient(106.02deg, rgba(255, 215, 247, 0.204) 1.71%, rgba(160, 75, 182, 0.087) 103.43%);
@@ -68,11 +69,11 @@
         .first-screen__doctor {
           position: absolute;
           z-index: 0;
-          left: 50%;
+          left: 51%;
           bottom: 0;
           right: -100px;
           padding-top: 10px;
-          
+
           margin-top: 0;
           background-image: url("../images/doctor-desktop.png");
           background-position: center bottom;
